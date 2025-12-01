@@ -10,6 +10,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --animate-slide-up: slide-up 0.5s ease-out forwards;
 }
 
 @media (prefers-color-scheme: dark) {
