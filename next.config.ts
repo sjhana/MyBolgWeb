@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   transpilePackages: ['three'],
+  basePath: '/my-repo',
 };
 
 export default nextConfig;
