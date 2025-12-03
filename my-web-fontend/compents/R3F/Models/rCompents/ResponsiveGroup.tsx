@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 interface ResponsiveGroupProps {
   children?: ReactNode;
-  size?: 0.25;
+  size?: number;
   position?: [number, number, number];
 }
 

@@ -56,6 +56,8 @@ export default function CameraRig({
         makeDefault // 设为默认相机，接管 Canvas 的渲染
         position={initialCameraPosition} 
         fov={50}
+        near={1}
+        far={500}
       />
       
     </group>
