@@ -7,7 +7,6 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   transpilePackages: ['three'],
-  basePath: "MyBlogWeb",
 };
 
 export default nextConfig;
