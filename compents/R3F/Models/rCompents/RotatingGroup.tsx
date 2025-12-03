@@ -8,7 +8,7 @@ interface RotatingGroupProps {
   rotation?: [number, number, number];
 }
 
-export default function RotatingGroup({speed = [0, 0, 0], children, rotation = [0, 0, 0], scale=[1, 1, 1]}: RotatingGroupProps) {
+export default function RotatingGroup({speed = [0, 0, 0], children, rotation = [0, 0, 0]}: RotatingGroupProps) {
     const groupRef = useRef<THREE.Group>(null)
     useFrame((state, delta) => {
     // delta 是两帧之间的时间间隔，乘以它可以保证旋转速度在不同刷新率屏幕上一致
@@ -18,7 +18,7 @@ export default function RotatingGroup({speed = [0, 0, 0], children, rotation = [
     groupRef.current.rotation.z += delta * speed[2]; 
   });
   return (
-  <group rotation={rotation} scale={scale}>
+  <group rotation={rotation} >
     <group ref={groupRef}>
     {children}
     </group>
