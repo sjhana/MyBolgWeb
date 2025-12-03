@@ -2,7 +2,7 @@
 import { Canvas } from "@react-three/fiber"
 import CameraRig from "@/compents/R3F/Camera/CameraRig";
 import Navbar from "@/compents/Navbar";
-import BlackHoleModel from "@/compents/R3F/Models/_BlackHole";
+import _BlackHole from "@/compents/R3F/Models/_BlackHole";
 import { Suspense } from "react";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
         <ambientLight intensity={0.1} />
         <directionalLight color="white" position={[0, 0, 5]} />
         <Suspense fallback={null}>
-          <BlackHoleModel 
+          <_BlackHole
             rotation={[Math.PI / 16, 0, Math.PI / 16]}
             speed={[0, 0.1, 0]}
           />
