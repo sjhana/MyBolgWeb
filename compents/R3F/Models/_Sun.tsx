@@ -1,5 +1,5 @@
 import { NumberUniform } from "three/src/renderers/common/Uniform.js";
-import Sun from "../../../my-web-fontend/public/Sun";
+import Sun from "../../../public/Sun";
 import ResponsiveGroup from "./rCompents/ResponsiveGroup";
 import RotatingGroup from "./rCompents/RotatingGroup";
 import { Suspense } from "react";
