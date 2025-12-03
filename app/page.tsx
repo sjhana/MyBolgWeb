@@ -7,6 +7,8 @@ import SunModel from "@/compents/R3F/Models/_Sun";
 import { CameraControls, Environment } from "@react-three/drei";
 import { Suspense, useEffect, useRef, useState } from "react";
 
+const BASE_URL = process.env.NODE_ENV === 'production' ? '/MyBlogWeb' : '';
+
 export default function Home() {
   const [bhActive, setBhActive] = useState(false);
 
@@ -30,7 +32,7 @@ export default function Home() {
         <Suspense>
           <Environment 
             background 
-            files="/sky1.jpg" 
+            files={`${BASE_URL}/public/sky1.jpg` }
           />
         </Suspense>
         {/* <CameraControls ref={cameraControlsRef} smoothTime={1.0} />

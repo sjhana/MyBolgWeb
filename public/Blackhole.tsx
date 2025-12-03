@@ -112,4 +112,4 @@ export default function Model(props: JSX.IntrinsicElements['group']) {
   )
 }
 
-useGLTF.preload('/blackhole-transformed.glb')
+useGLTF.preload('/MyBlogWeb/blackhole-transformed.glb')

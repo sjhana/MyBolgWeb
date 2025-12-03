@@ -51,4 +51,4 @@ export default function Model(props: JSX.IntrinsicElements['group']) {
   )
 }
 
-useGLTF.preload('/sun-transformed.glb')
+useGLTF.preload('/MyBlogWeb/sun-transformed.glb')
